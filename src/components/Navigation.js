@@ -1,16 +1,24 @@
 import { Route, Routes } from "react-router-dom"
-import About from "../Pages/About"
-import Contact from "../Pages/Contact"
-import Home from "../Pages/Home"
+
+import React from "react"
+import About from "../pages/About"
+import Contact from "../pages/Contact"
+import HomeContainer from "../containers/HomeContainer"
+
 const Nav = () => {
     return (
         <>
-            <Routes>
-                <Route exact path="/home" element={<Home />} />
-                <Route path="/contact" element={<Contact />} />
+          <Routes>
+                <Route exact path="/" element={<HomeContainer />} />
                 <Route  path="/about" element={<About />} />
+                <Route  path="/contact" element={<Contact />} />
+                
+                
             </Routes>
+        
         </>
+        
+          
 
     )
 }

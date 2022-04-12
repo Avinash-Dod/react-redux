@@ -1,4 +1,4 @@
-import Home from '../components/Home'
+import Home from '../pages/Home'
 import {connect} from 'react-redux'
 import {addToCart,removeFromCart} from '../service/actions/actions'
 
